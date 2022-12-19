@@ -15,10 +15,10 @@ public class TaskRepository {
 	
 	private static Connection getConnection() throws SQLException {
 		String host = "localhost";
-		String sqlInstance = "LAPTOP-C2M2SNG5\\SQLEXPRESS";
-		String sqlDatabase = "TaskManager";
-		String sqlUser = "TaskMangerLogin";
-		String sqlPassword = "music1234";
+		String sqlInstance = //"your laptop name\\SQLEXPRESS";
+		String sqlDatabase = //"your database name - mine isTaskManager";
+		String sqlUser = //"your username - mine is TaskMangerLogin";
+		String sqlPassword = //"your database password";
 		
 		String jdbcConnection = String.format("jdbc:sqlserver://%s:1433;instance=%s;databaseName=%s;encrypt=true;trustServerCertificate=true",
 				host,
